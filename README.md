@@ -29,7 +29,7 @@ Go to your root managment app (Magisk/KernelSU/SuperUser)
 <p>3. Download Tasker Project</p>
 
 ```
-https://github.com/DarknessKiller/MGODiceManipulation
+https://github.com/DarknessKiller/MGORollManipulation
 ```
 
 <p>4. Import Tasker Project</p>
