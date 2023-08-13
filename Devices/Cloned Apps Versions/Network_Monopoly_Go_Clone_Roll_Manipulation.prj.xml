@@ -2,9 +2,9 @@
 	<dmetric>1080.0,2234.0</dmetric>
 	<Project sr="proj0" ve="2">
 		<cdate>1553485290627</cdate>
-		<name>(Network) Monopoly Go Roll Manipulation Clone</name>
+		<name>(Network) Monopoly Go Clone Roll Manipulation</name>
 		<scenes>Monopoly Go 2 (DATA),Monopoly Go 2 (WIFI)</scenes>
-		<tids>274,260,273,272,257,276,275,258,259,261</tids>
+		<tids>6,2,4,7,5,10,3,9,8,11</tids>
 		<Kid sr="Kid">
 			<launchID>52</launchID>
 			<pkg>com.tester.test</pkg>
@@ -13,7 +13,7 @@
 		</Kid>
 		<Share sr="Share">
 			<b>false</b>
-			<d>(Network) Monopoly Go Roll Manipulation Clone</d>
+			<d>(Network) Monopoly Go Clone Roll Manipulation</d>
 			<p>false</p>
 			<t>Show Scene</t>
 		</Share>
@@ -33,7 +33,7 @@
 		<ImageElement sr="elements0" ve="2">
 			<flags>4</flags>
 			<geom>0,0,82,82,25,25,200,200</geom>
-			<strokeTask>258</strokeTask>
+			<strokeTask>6</strokeTask>
 			<Str sr="arg0" ve="3">Move Button</Str>
 			<Img sr="arg1" ve="2">
 				<nme>mw_maps_zoom_out_map</nme>
@@ -54,7 +54,7 @@
 			<StrokeFilter sr="filter2"/>
 		</ImageElement>
 		<ButtonElement sr="elements1" ve="3">
-			<clickTask>259</clickTask>
+			<clickTask>8</clickTask>
 			<flags>4</flags>
 			<geom>86,0,195,382,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Monopoly Reseter</Str>
@@ -70,7 +70,7 @@
 			</Img>
 		</ButtonElement>
 		<ButtonElement sr="elements2" ve="3">
-			<clickTask>257</clickTask>
+			<clickTask>4</clickTask>
 			<flags>4</flags>
 			<geom>278,0,195,382,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Network Disable1</Str>
@@ -106,7 +106,7 @@
 		<ImageElement sr="elements0" ve="2">
 			<flags>4</flags>
 			<geom>0,0,82,82,25,25,200,200</geom>
-			<strokeTask>273</strokeTask>
+			<strokeTask>3</strokeTask>
 			<Str sr="arg0" ve="3">Move Button</Str>
 			<Img sr="arg1" ve="2">
 				<nme>mw_maps_zoom_out_map</nme>
@@ -127,7 +127,7 @@
 			<StrokeFilter sr="filter2"/>
 		</ImageElement>
 		<ButtonElement sr="elements1" ve="3">
-			<clickTask>274</clickTask>
+			<clickTask>5</clickTask>
 			<flags>4</flags>
 			<geom>86,0,195,382,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Monopoly Reseter</Str>
@@ -143,7 +143,7 @@
 			</Img>
 		</ButtonElement>
 		<ButtonElement sr="elements2" ve="3">
-			<clickTask>272</clickTask>
+			<clickTask>2</clickTask>
 			<flags>4</flags>
 			<geom>278,0,195,382,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Network Disable1</Str>
@@ -168,453 +168,22 @@
 			<Str sr="arg7" ve="3"/>
 		</PropertiesElement>
 	</Scene>
-	<Task sr="task257">
-		<cdate>1691566741825</cdate>
-		<edate>1691566741825</edate>
-		<id>257</id>
-		<pri>102</pri>
-		<Action sr="act0" ve="7">
-			<code>433</code>
-			<Int sr="arg0" val="2"/>
-			<Bundle sr="arg1">
-				<Vals sr="val">
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES><StringArray sr=""><_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0>%new_state
-New State
-true if it after the action the setting is enabled, false if not</_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0></StringArray></net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-				</Vals>
-			</Bundle>
-		</Action>
-	</Task>
-	<Task sr="task258">
-		<cdate>1553485701029</cdate>
-		<edate>1553485701029</edate>
-		<id>258</id>
-		<pri>112</pri>
-		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Move Scene (MPG2DATA)</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3">%stroke_dir</Str>
-			<Str sr="arg3" ve="3">%stroke_len</Str>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task259">
-		<cdate>1691749457126</cdate>
-		<edate>1691749457126</edate>
-		<id>259</id>
-		<pri>102</pri>
-		<Action sr="act0" ve="7">
-			<code>61</code>
-			<Int sr="arg0" val="200"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>123</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">am force-stop --user 10 com.scopely.monopolygo</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="1"/>
-			<Int sr="arg7" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>123</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">rm -rf /data/user/10/com.scopely.monopolygo/files/*.ca</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="1"/>
-			<Int sr="arg7" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>433</code>
-			<Int sr="arg0" val="1"/>
-			<Bundle sr="arg1">
-				<Vals sr="val">
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES><StringArray sr=""><_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0>%new_state
-New State
-true if it after the action the setting is enabled, false if not</_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0></StringArray></net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-				</Vals>
-			</Bundle>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>123</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">am start --user 10 com.scopely.monopolygo/com.scopely.unity.ScopelyUnityActivity</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="1"/>
-			<Int sr="arg7" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task260">
-		<cdate>1553457372830</cdate>
-		<edate>1691755950229</edate>
-		<id>260</id>
-		<nme>Move Scene (MPG2DATA)</nme>
+	<Task sr="task10">
+		<cdate>1553485763898</cdate>
+		<edate>1691755590447</edate>
+		<id>10</id>
+		<nme>Start Monopoly Go 2 (WIFI)</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
-			<code>547</code>
-			<label>Direction of Drag Stroke</label>
-			<Str sr="arg0" ve="3">%direction</Str>
-			<Str sr="arg1" ve="3">%par1</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>547</code>
-			<label>Distance of Drag Stroke</label>
-			<Str sr="arg0" ve="3">%distance</Str>
-			<Str sr="arg1" ve="3">%par2</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act10" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act11" ve="7">
-			<code>43</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>Right</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act12" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition+%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act13" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act14" ve="7">
-			<code>43</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>Up</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act15" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act16" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition-%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act17" ve="7">
-			<code>43</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>Down</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act18" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act19" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition+%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>348</code>
-			<label>Get Device Resolution for Calculations</label>
-			<Int sr="arg0" val="3"/>
-			<Str sr="arg1" ve="3"/>
-			<Str sr="arg2" ve="3">%resolution</Str>
-		</Action>
-		<Action sr="act20" ve="7">
-			<code>43</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>UpRight</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act21" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%distance</Str>
-			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act22" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition+%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act23" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition-%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act24" ve="7">
-			<code>43</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>UpLeft</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act25" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%distance</Str>
-			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act26" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition-%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act27" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition-%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act28" ve="7">
-			<code>43</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>DownRight</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act29" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%distance</Str>
-			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>590</code>
-			<Str sr="arg0" ve="3">%resolution</Str>
-			<Str sr="arg1" ve="3">x</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act30" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition+%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act31" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition+%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act32" ve="7">
-			<code>43</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>DownLeft</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act33" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%distance</Str>
-			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act34" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition-%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act35" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newyposition</Str>
-			<Str sr="arg1" ve="3">%yposition+%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act36" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act37" ve="7">
-			<code>547</code>
-			<label>Get New Relative Position</label>
-			<Str sr="arg0" ve="3">%newscenehorizon</Str>
-			<Str sr="arg1" ve="3">round(%newxposition/%resolution(1)*200)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act38" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newscenevertical</Str>
-			<Str sr="arg1" ve="3">round(%newyposition/%resolution(2)*200)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act39" ve="7">
-			<code>48</code>
-			<label>Make the Move ie Reload</label>
-			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>194</code>
-			<label>Get Relative Scene Position and Convert to X,Y</label>
-			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
-			<Int sr="arg1" val="1"/>
-			<Str sr="arg2" ve="3">%horizon</Str>
-		</Action>
-		<Action sr="act40" ve="7">
 			<code>47</code>
-			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
+			<Str sr="arg0" ve="3">Monopoly Go 2 (WIFI)</Str>
 			<Int sr="arg1" val="1"/>
 			<Int sr="arg10" val="0"/>
 			<Int sr="arg2">
-				<var>%newscenehorizon</var>
+				<var>100</var>
 			</Int>
 			<Int sr="arg3">
-				<var>%newscenevertical</var>
+				<var>100</var>
 			</Int>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="1"/>
@@ -623,58 +192,11 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 			<Int sr="arg8" val="1"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
-		<Action sr="act5" ve="7">
-			<code>194</code>
-			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
-			<Int sr="arg1" val="2"/>
-			<Str sr="arg2" ve="3">%vertical</Str>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%xposition</Str>
-			<Str sr="arg1" ve="3">%resolution(1)*((%horizon+100)/200)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%yposition</Str>
-			<Str sr="arg1" ve="3">%resolution(2)*((%vertical+100)/200)</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>37</code>
-			<label>BEGIN CALCULATING MOVEMENT</label>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%direction</lhs>
-					<op>0</op>
-					<rhs>Left</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%newxposition</Str>
-			<Str sr="arg1" ve="3">%xposition-%distance</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-			<Int sr="arg6" val="0"/>
-		</Action>
 	</Task>
-	<Task sr="task261">
+	<Task sr="task11">
 		<cdate>1553485763898</cdate>
 		<edate>1691755938258</edate>
-		<id>261</id>
+		<id>11</id>
 		<nme>Start Monopoly Go 2 (DATA)</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
@@ -696,20 +218,20 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task272">
+	<Task sr="task2">
 		<cdate>1691566741825</cdate>
 		<edate>1691566741825</edate>
-		<id>272</id>
+		<id>2</id>
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>425</code>
 			<Int sr="arg0" val="2"/>
 		</Action>
 	</Task>
-	<Task sr="task273">
+	<Task sr="task3">
 		<cdate>1553485701029</cdate>
 		<edate>1553485701029</edate>
-		<id>273</id>
+		<id>3</id>
 		<pri>112</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
@@ -728,10 +250,28 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task274">
+	<Task sr="task4">
+		<cdate>1691566741825</cdate>
+		<edate>1691566741825</edate>
+		<id>4</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>433</code>
+			<Int sr="arg0" val="2"/>
+			<Bundle sr="arg1">
+				<Vals sr="val">
+					<_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0>%new_state
+New State
+true if it after the action the setting is enabled, false if not</_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0>
+					<_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0-type>java.lang.String</_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0-type>
+				</Vals>
+			</Bundle>
+		</Action>
+	</Task>
+	<Task sr="task5">
 		<cdate>1691749457126</cdate>
 		<edate>1691749457126</edate>
-		<id>274</id>
+		<id>5</id>
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>61</code>
@@ -778,10 +318,32 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 			<Int sr="arg7" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task275">
+	<Task sr="task6">
+		<cdate>1553485701029</cdate>
+		<edate>1553485701029</edate>
+		<id>6</id>
+		<pri>112</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Move Scene (MPG2DATA)</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">%stroke_dir</Str>
+			<Str sr="arg3" ve="3">%stroke_len</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task7">
 		<cdate>1553457372830</cdate>
 		<edate>1691755618721</edate>
-		<id>275</id>
+		<id>7</id>
 		<nme>Move Scene (MPG2WIFI)</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
@@ -1183,22 +745,413 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 			<Int sr="arg6" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task276">
-		<cdate>1553485763898</cdate>
-		<edate>1691755590447</edate>
-		<id>276</id>
-		<nme>Start Monopoly Go 2 (WIFI)</nme>
+	<Task sr="task8">
+		<cdate>1691749457126</cdate>
+		<edate>1691749457126</edate>
+		<id>8</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>61</code>
+			<Int sr="arg0" val="200"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>123</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">am force-stop --user 10 com.scopely.monopolygo</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>123</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">rm -rf /data/user/10/com.scopely.monopolygo/files/*.ca</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>433</code>
+			<Int sr="arg0" val="1"/>
+			<Bundle sr="arg1">
+				<Vals sr="val">
+					<_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0>%new_state
+New State
+true if it after the action the setting is enabled, false if not</_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0>
+					<_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0-type>java.lang.String</_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0-type>
+				</Vals>
+			</Bundle>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>123</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">am start --user 10 com.scopely.monopolygo/com.scopely.unity.ScopelyUnityActivity</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task9">
+		<cdate>1553457372830</cdate>
+		<edate>1691755950229</edate>
+		<id>9</id>
+		<nme>Move Scene (MPG2DATA)</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>Direction of Drag Stroke</label>
+			<Str sr="arg0" ve="3">%direction</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>Distance of Drag Stroke</label>
+			<Str sr="arg0" ve="3">%distance</Str>
+			<Str sr="arg1" ve="3">%par2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>Right</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition+%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>Up</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition-%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>Down</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition+%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>348</code>
+			<label>Get Device Resolution for Calculations</label>
+			<Int sr="arg0" val="3"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">%resolution</Str>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>UpRight</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%distance</Str>
+			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition+%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition-%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>UpLeft</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%distance</Str>
+			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition-%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition-%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>DownRight</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act29" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%distance</Str>
+			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%resolution</Str>
+			<Str sr="arg1" ve="3">x</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act30" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition+%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition+%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act32" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>DownLeft</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act33" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%distance</Str>
+			<Str sr="arg1" ve="3">sqrt(%distance^2/2)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act34" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition-%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act35" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newyposition</Str>
+			<Str sr="arg1" ve="3">%yposition+%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act36" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act37" ve="7">
+			<code>547</code>
+			<label>Get New Relative Position</label>
+			<Str sr="arg0" ve="3">%newscenehorizon</Str>
+			<Str sr="arg1" ve="3">round(%newxposition/%resolution(1)*200)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act38" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newscenevertical</Str>
+			<Str sr="arg1" ve="3">round(%newyposition/%resolution(2)*200)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act39" ve="7">
+			<code>48</code>
+			<label>Make the Move ie Reload</label>
+			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>194</code>
+			<label>Get Relative Scene Position and Convert to X,Y</label>
+			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%horizon</Str>
+		</Action>
+		<Action sr="act40" ve="7">
 			<code>47</code>
-			<Str sr="arg0" ve="3">Monopoly Go 2 (WIFI)</Str>
+			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
 			<Int sr="arg1" val="1"/>
 			<Int sr="arg10" val="0"/>
 			<Int sr="arg2">
-				<var>100</var>
+				<var>%newscenehorizon</var>
 			</Int>
 			<Int sr="arg3">
-				<var>100</var>
+				<var>%newscenevertical</var>
 			</Int>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="1"/>
@@ -1206,6 +1159,53 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 			<Int sr="arg7" val="1"/>
 			<Int sr="arg8" val="1"/>
 			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>194</code>
+			<Str sr="arg0" ve="3">Monopoly Go 2 (DATA)</Str>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">%vertical</Str>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%xposition</Str>
+			<Str sr="arg1" ve="3">%resolution(1)*((%horizon+100)/200)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%yposition</Str>
+			<Str sr="arg1" ve="3">%resolution(2)*((%vertical+100)/200)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>37</code>
+			<label>BEGIN CALCULATING MOVEMENT</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%direction</lhs>
+					<op>0</op>
+					<rhs>Left</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%newxposition</Str>
+			<Str sr="arg1" ve="3">%xposition-%distance</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
 		</Action>
 	</Task>
 </TaskerData>
