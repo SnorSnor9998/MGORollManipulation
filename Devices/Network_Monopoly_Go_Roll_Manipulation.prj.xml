@@ -224,6 +224,18 @@
 			<Int sr="arg7" val="0"/>
 		</Action>
 		<Action sr="act3" ve="7">
+			<code>123</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">rm -rf /data/data/com.scopely.monopolygo/files/DiskBasedCacheDirectory/board_states.others.1Production.dat</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>433</code>
 			<Int sr="arg0" val="1"/>
 			<Bundle sr="arg1">
@@ -235,7 +247,7 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 				</Vals>
 			</Bundle>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act5" ve="7">
 			<code>123</code>
 			<se>false</se>
 			<Str sr="arg0" ve="3">am start com.scopely.monopolygo/com.scopely.unity.ScopelyUnityActivity</Str>
