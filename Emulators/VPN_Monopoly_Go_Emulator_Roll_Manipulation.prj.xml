@@ -4,7 +4,7 @@
 		<cdate>1553485290627</cdate>
 		<name>(VPN) Monopoly Go Emulator Roll Manipulation</name>
 		<scenes>Monopoly Go Emulator (VPN)</scenes>
-		<tids>400,401,397,396,399,398</tids>
+		<tids>5,4,3,6,2,7</tids>
 		<Kid sr="Kid">
 			<launchID>52</launchID>
 			<pkg>com.tester.test</pkg>
@@ -33,7 +33,7 @@
 		<ImageElement sr="elements0" ve="2">
 			<flags>4</flags>
 			<geom>0,0,82,82,25,25,200,200</geom>
-			<strokeTask>400</strokeTask>
+			<strokeTask>2</strokeTask>
 			<Str sr="arg0" ve="3">Move Button</Str>
 			<Img sr="arg1" ve="2">
 				<nme>mw_maps_zoom_out_map</nme>
@@ -54,7 +54,7 @@
 			<StrokeFilter sr="filter2"/>
 		</ImageElement>
 		<ButtonElement sr="elements1" ve="3">
-			<clickTask>401</clickTask>
+			<clickTask>3</clickTask>
 			<flags>4</flags>
 			<geom>86,0,195,382,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Monopoly Reseter</Str>
@@ -70,7 +70,7 @@
 			</Img>
 		</ButtonElement>
 		<ButtonElement sr="elements2" ve="3">
-			<clickTask>396</clickTask>
+			<clickTask>4</clickTask>
 			<flags>4</flags>
 			<geom>278,0,195,195,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Network Disable</Str>
@@ -85,7 +85,7 @@
 			</Img>
 		</ButtonElement>
 		<ButtonElement sr="elements3" ve="3">
-			<clickTask>397</clickTask>
+			<clickTask>5</clickTask>
 			<flags>4</flags>
 			<geom>278,195,195,195,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Network Enable</Str>
@@ -110,10 +110,83 @@
 			<Str sr="arg7" ve="3"/>
 		</PropertiesElement>
 	</Scene>
-	<Task sr="task396">
+	<Task sr="task2">
+		<cdate>1553485701029</cdate>
+		<edate>1553485701029</edate>
+		<id>2</id>
+		<pri>112</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Move Scene (MPGEMUVPN)</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">%stroke_dir</Str>
+			<Str sr="arg3" ve="3">%stroke_len</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task3">
+		<cdate>1691749457126</cdate>
+		<edate>1691749457126</edate>
+		<id>3</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>123</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">am force-stop com.scopely.monopolygo</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>123</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">rm -rf /data/data/com.scopely.monopolygo/files/*.ca</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>173</code>
+			<Int sr="arg0" val="1"/>
+			<App sr="arg1">
+				<appClass>com.scopely.unity.ScopelyUnityActivity</appClass>
+				<appPkg>com.scopely.monopolygo</appPkg>
+				<label>MONOPOLY GO</label>
+			</App>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>123</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">am start com.scopely.monopolygo/com.scopely.unity.ScopelyUnityActivity</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task4">
 		<cdate>1691566741825</cdate>
 		<edate>1691566741825</edate>
-		<id>396</id>
+		<id>4</id>
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>173</code>
@@ -125,10 +198,10 @@
 			</App>
 		</Action>
 	</Task>
-	<Task sr="task397">
+	<Task sr="task5">
 		<cdate>1691566741825</cdate>
 		<edate>1691566741825</edate>
-		<id>397</id>
+		<id>5</id>
 		<pri>106</pri>
 		<Action sr="act0" ve="7">
 			<code>173</code>
@@ -140,10 +213,10 @@
 			</App>
 		</Action>
 	</Task>
-	<Task sr="task398">
+	<Task sr="task6">
 		<cdate>1553457372830</cdate>
 		<edate>1691839252860</edate>
-		<id>398</id>
+		<id>6</id>
 		<nme>Move Scene (MPGEMUVPN)</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
@@ -545,10 +618,10 @@
 			<Int sr="arg6" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task399">
+	<Task sr="task7">
 		<cdate>1553485763898</cdate>
 		<edate>1691838142837</edate>
-		<id>399</id>
+		<id>7</id>
 		<nme>Start Monopoly Go Emulator (VPN)</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
@@ -568,79 +641,6 @@
 			<Int sr="arg7" val="1"/>
 			<Int sr="arg8" val="1"/>
 			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task400">
-		<cdate>1553485701029</cdate>
-		<edate>1553485701029</edate>
-		<id>400</id>
-		<pri>112</pri>
-		<Action sr="act0" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Move Scene (MPGEMUVPN)</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3">%stroke_dir</Str>
-			<Str sr="arg3" ve="3">%stroke_len</Str>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task401">
-		<cdate>1691749457126</cdate>
-		<edate>1691749457126</edate>
-		<id>401</id>
-		<pri>102</pri>
-		<Action sr="act0" ve="7">
-			<code>123</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">am force-stop com.scopely.monopolygo</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>123</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">rm -rf /data/data/com.scopely.monopolygo/files/*.ca</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>173</code>
-			<Int sr="arg0" val="1"/>
-			<App sr="arg1">
-				<appClass>com.scopely.unity.ScopelyUnityActivity</appClass>
-				<appPkg>com.scopely.monopolygo</appPkg>
-				<label>MONOPOLY GO</label>
-			</App>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>123</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">am start com.scopely.monopolygo/com.scopely.unity.ScopelyUnityActivity</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
 		</Action>
 	</Task>
 </TaskerData>
