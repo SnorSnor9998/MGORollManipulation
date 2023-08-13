@@ -304,13 +304,13 @@ true if it after the action the setting is enabled, false if not</_array_net.din
 		<Action sr="act3" ve="7">
 			<code>123</code>
 			<se>false</se>
-			<Str sr="arg0" ve="3">rm -rf /data/data/com.scopely.monopolygo/files/DiskBasedCacheDirectory/board_states.others.1Production.dat</Str>
+			<Str sr="arg0" ve="3">rm -rf /data/user/com.scopely.monopolygo/files/DiskBasedCacheDirectory/board_states.others.1Production.dat</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="1"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="0"/>
+			<Int sr="arg6" val="1"/>
 			<Int sr="arg7" val="0"/>
 		</Action>
 		<Action sr="act4" ve="7">
