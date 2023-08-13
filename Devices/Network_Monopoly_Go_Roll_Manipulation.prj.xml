@@ -73,7 +73,7 @@
 			<clickTask>4</clickTask>
 			<flags>4</flags>
 			<geom>278,0,195,382,-1,-1,-1,-1</geom>
-			<Str sr="arg0" ve="3">Network Disable1</Str>
+			<Str sr="arg0" ve="3">Network Disable</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="16"/>
 			<Int sr="arg3" val="100"/>
@@ -146,7 +146,7 @@
 			<clickTask>6</clickTask>
 			<flags>4</flags>
 			<geom>278,0,195,382,-1,-1,-1,-1</geom>
-			<Str sr="arg0" ve="3">Network Disable1</Str>
+			<Str sr="arg0" ve="3">Network Disable</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="16"/>
 			<Int sr="arg3" val="100"/>
